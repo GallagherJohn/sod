@@ -23,33 +23,36 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <style>
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://res.cloudinary.com/dxghmamh0/image/upload/e_improve/v1767067155/IMG_9353_wapy5t.jpg');
-            background-size: cover;
-            background-position: center bottom;
-            background-repeat: no-repeat;
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .grass-icon {
-            color: #22c55e;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        #mobile-menu {
-            transition: max-height 0.3s ease-in-out;
-            max-height: 0;
-            overflow: hidden;
-        }
-        #mobile-menu.open {
-            max-height: 500px;
-        }
-    </style>
+    .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), 
+                    url('https://res.cloudinary.com/dxghmamh0/image/upload/e_improve/v1767067155/IMG_9353_wapy5t.jpg');
+        background-size: 100% auto;         /* Middle ground: full width, natural height */
+        background-position: center bottom; /* Keeps grass at the bottom */
+        background-repeat: no-repeat;
+        background-attachment: fixed;       /* Nice subtle parallax on desktop */
+        background-color: #166534;          /* Dark green fallback if image is short */
+    }
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .grass-icon {
+        color: #22c55e;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    #mobile-menu {
+        transition: max-height 0.3s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+    #mobile-menu.open {
+        max-height: 500px;
+    }
+</style>
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
@@ -483,6 +486,7 @@
     </script>
 </body>
 </html>
+
 
 
 
